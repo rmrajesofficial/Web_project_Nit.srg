@@ -1,81 +1,160 @@
-/* Reset some default browser styles */
-* {
-  box-sizing: border-box;
+/* style.css */
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: Ivory;
+  color: DarkGreen;
   margin: 0;
   padding: 0;
 }
 
-/* Set the background color and font for the whole page */
-body {
-  --background-color: #f5f5f5;
-  --prim_color: #1589ff;
-  --sec_color: #ffa31a;
-  --tert_color: red;
-  font-family: Arial, sans-serif;
+/* Header Styles */
+header {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+header h1 {
+  margin-left: 40px;
+  color: yellow;
+  transition: transform 0.8s ease;
+  cursor: pointer;
+}
+header h1:hover {
+  transform: scale(1.2);
 }
 
-/* Style the navigation menu */
-.header {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--sec_color);
-}
-nav {
-  color: #fff;
-  padding: 10px;
+h1 {
+  color: Ivory;
+  margin: 0;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0px 40px;
 }
 
-nav li {
-  display: inline-block;
-  margin-right: 10px;
+nav ul li {
+  display: inline;
+  margin-right: 20px;
 }
 
-nav a {
-  color: #fff;
+nav ul li a {
+  color: yellow;
   text-decoration: none;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  transition: color 0.3s ease;
+  position: relative;
 }
 
-nav a:hover {
-  text-decoration: underline;
-  color: var(--prim_color);
-}
-
-/* Style the main content area */
-main {
-  height: 100%;
+nav ul li a::after {
+  content: "";
+  position: absolute;
   width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: ivory;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: ivory;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: DarkGreen;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.background {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  position: relative;
+
+  height: 700px;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  color: Ivory;
+}
+
+.main-content h2,
+.main-content p {
+  margin-bottom: 20px;
+}
+
+#container_1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 0px 50px;
-}
-.container {
-  height: 500px;
-  width: 100%;
-  display: flex;
-  margin: 20px 0px;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--background-color);
-  border: 2px solid var(--prim_color);
-  font-size: 80px;
+  color: yellow;
+  margin: 0px 100px;
 }
 
-/* Style the footer */
+#btn_1 {
+  border: 2px solid transparent;
+  background-color: yellow;
+  color: darkgreen;
+  display: flex;
+  font-size: 20px;
+  height: 40px;
+  width: 100px;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+#btn_1:hover {
+  background-color: transparent;
+  border: 2px solid ivory;
+  color: ivory;
+}
+
+/* Footer Styles */
 footer {
-  background-color: black;
-  color: white;
-  padding: 5px;
+  background-color: DarkGreen;
+  color: Ivory;
+  padding: 20px;
   text-align: center;
+  font-size: 14px;
 }
