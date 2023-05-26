@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <div class="connect"></div>
+    <div class="help">?</div>
     <div class="background">
       <header>
         <h1>Logo</h1>
@@ -21,7 +23,7 @@
       </header>
 
       <div id="container_1">
-        <h2 style="font-size: 4rem; color: ivory">Welcome</h2>
+        <h2 id="changing-text" style="font-size: 4rem; color: ivory"></h2>
         <p>
           Welcome to <strong>Path Finder! </strong> Welcome to our travel
           website! We're thrilled that you're here and ready to embark on an
@@ -32,6 +34,25 @@
         </p>
         <container id="btn_1">Explore</container>
       </div>
+    </div>
+    <div class="middle">
+      <span
+        style="display: flex; justify-content: center; flex-direction: column"
+        ><div>Number of state</div>
+        <div class="count_1">3</div></span
+      >
+      <div class="divider"></div>
+      <span
+        style="display: flex; justify-content: center; flex-direction: column"
+        ><div>Number of places</div>
+        <div class="count_2">0</div></span
+      >
+      <div class="divider"></div>
+      <span
+        style="display: flex; justify-content: center; flex-direction: column"
+        ><div>extra</div>
+        <div class="count_3">0</div></span
+      >
     </div>
     <main>
       <section>
@@ -54,4 +75,5 @@
       <p>&copy; 2023 Path Finder</p>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
