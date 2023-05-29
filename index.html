@@ -1,57 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Path Finder</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <div class="background">
-      <header>
-        <h1>Logo</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="explore.html">Explore</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contuctus.html">Contuct Us</a></li>
-          </ul>
-        </nav>
-      </header>
 
-      <div id="container_1">
-        <h2 style="font-size: 4rem; color: ivory">Welcome</h2>
-        <p>
-          Welcome to <strong>Path Finder! </strong> Welcome to our travel
-          website! We're thrilled that you're here and ready to embark on an
-          exciting journey of exploration. Whether you're a seasoned adventurer
-          or a first-time traveler, we're here to help you discover new
-          destinations, experience new cultures, and make unforgettable
-          memories.
-        </p>
+<head>
+  <title>Path Finder</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+  <div class="connect"></div>
+  <div class="help">?</div>
+  <div class="background">
+    <header>
+      <h1>Logo</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">Explore</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contuctus.html">Contuct Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="container_1">
+      <h2 id="changing-text" style="font-size: 4rem; color: ivory"></h2>
+
+      <p>
+        Welcome to <strong>Path Finder! </strong> Welcome to our travel
+        website! We're thrilled that you're here and ready to embark on an
+        exciting journey of exploration. Whether you're a seasoned adventurer
+        or a first-time traveler, we're here to help you discover new
+        destinations, experience new cultures, and make unforgettable
+        memories.
+      </p>
+
+      <a href="map.html">
         <container id="btn_1">Explore</container>
-      </div>
+      </a>
     </div>
-    <main>
-      <section>
-        <h2>About Us</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-          earum ex est, impedit a deserunt tenetur vitae? Cumque esse dicta id
-          tempore voluptas, totam adipisci, minus odit impedit reprehenderit
-          facere?.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
-          sequi inventore dolorem minima quis ullam veniam cumque, accusamus
-          distinctio harum maxime adipisci voluptatum autem fugit minus tempora
-          vel molestias accusantium.
-        </p>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2023 Path Finder</p>
-    </footer>
-  </body>
+  </div>
+  <div class="middle">
+    <span style="display: flex; justify-content: center; flex-direction: column">
+      <div>Number of state</div>
+      <div class="count_1">3</div>
+    </span>
+    <div class="divider"></div>
+    <span style="display: flex; justify-content: center; flex-direction: column">
+      <div>Number of places</div>
+      <div class="count_2">0</div>
+    </span>
+    <div class="divider"></div>
+    <span style="display: flex; justify-content: center; flex-direction: column">
+      <div>extra</div>
+      <div class="count_3">0</div>
+    </span>
+  </div>
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+        earum ex est, impedit a deserunt tenetur vitae? Cumque esse dicta id
+        tempore voluptas, totam adipisci, minus odit impedit reprehenderit
+        facere?.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+        sequi inventore dolorem minima quis ullam veniam cumque, accusamus
+        distinctio harum maxime adipisci voluptatum autem fugit minus tempora
+        vel molestias accusantium.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Path Finder</p>
+  </footer>
+</body>
+<script src="script.js"></script>
+
 </html>

@@ -1,7 +1,16 @@
 /* style.css */
 
 /* Body Styles */
+:root {
+  font-size: 16px;
+}
+
+a{
+  text-decoration: none;
+}
+
 body {
+  position: relative;
   font-family: Arial, sans-serif;
   background-color: Ivory;
   color: DarkGreen;
@@ -89,10 +98,11 @@ p {
 .background {
   /* display: flex;
   flex-direction: column;
-  align-items: center; */
+  align-items: center;
+  justify-content: center; */
   position: relative;
 
-  height: 700px;
+  height: 100vh;
 }
 
 .background::before {
@@ -126,7 +136,7 @@ p {
   flex-direction: column;
   align-items: center;
   color: yellow;
-  margin: 0px 100px;
+  margin: 25vh 100px;
 }
 
 #btn_1 {
@@ -143,11 +153,85 @@ p {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s ease;
+  
 }
 #btn_1:hover {
   background-color: transparent;
   border: 2px solid ivory;
   color: ivory;
+}
+.middle {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 50px;
+  top: 100vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  box-shadow: 0px 2px 5px gray;
+  background-color: ivory;
+  border-radius: 50px;
+  padding: 5px 50px;
+}
+.middle span {
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  padding: 0px;
+}
+.middle span div {
+  color: darkgreen;
+  font-size: 1.2rem;
+  padding: 5px 0px;
+}
+.divider {
+  height: 100%;
+  width: 5px;
+  background-color: gray;
+}
+.help {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: center;
+  color: yellow;
+  background-color: darkgreen;
+  box-shadow: 0px 2px 5px gray;
+  border-radius: 50%;
+  top: 90vh;
+  left: 93vw;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  z-index: +1;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.help:hover {
+  background-color: ivory;
+  color: darkgreen;
+  transform: scale(1.2);
+}
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  background-color: darkgreen;
+  box-shadow: 0px 2px 5px gray;
+  top: 50vh;
+  left: -1.5vw;
+  position: fixed;
+  width: 50px;
+  height: 150px;
+  border-radius: 15px;
+  z-index: +1;
+}
+#changing-text {
+  height: 100px;
+  overflow: hidden;
 }
 
 /* Footer Styles */
