@@ -4,12 +4,46 @@
     <title>Path Finder</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <div class="connect"></div>
-    <div class="help">?</div>
     <div class="background">
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <div class="slide first">
+            <img src="1.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="2.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="3.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="4.jpg" alt="" />
+          </div>
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      </div>
       <header>
         <h1>Logo</h1>
         <nav>
@@ -24,14 +58,14 @@
 
       <div id="container_1">
         <h2 id="changing-text" style="font-size: 4rem; color: ivory"></h2>
-        <p>
-          Welcome to <strong>Path Finder! </strong> Welcome to our travel
-          website! We're thrilled that you're here and ready to embark on an
-          exciting journey of exploration. Whether you're a seasoned adventurer
-          or a first-time traveler, we're here to help you discover new
-          destinations, experience new cultures, and make unforgettable
-          memories.
-        </p>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <button type="submit" class="search-icon-button">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+
         <container id="btn_1">Explore</container>
       </div>
     </div>
@@ -55,6 +89,82 @@
       >
     </div>
     <main>
+      <h1 style="color: black; padding: 40px 140px">Top Places</h1>
+      <div
+        style="
+          height: 500px;
+          width: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0px 100px;
+          position: relative;
+        "
+      >
+        <div class="top_places">
+          <div>
+            <img
+              src="1.jpg"
+              alt=""
+              style="height: 395px; width: 400px; border-radius: 20px"
+            />
+          </div>
+          <span><h3>Delhi</h3></span>
+        </div>
+        <div class="top_places">
+          <div style="height: auto; width: auto">
+            <img
+              src="2.jpg"
+              alt=""
+              style="height: 395px; width: 400px; border-radius: 20px"
+            />
+          </div>
+          <span><h3>Mumbai</h3></span>
+        </div>
+        <div class="top_places">
+          <div>
+            <img
+              src="3.jpg"
+              alt=""
+              style="height: 395px; width: 400px; border-radius: 20px"
+            />
+          </div>
+          <span><h3>Kolkata</h3></span>
+        </div>
+      </div>
+      <div
+        class="video"
+        style="
+          height: 100vh;
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          color: white;
+          font-size: 5rem;
+        "
+      >
+        <video
+          autoplay
+          loop
+          muted
+          style="
+            position: fixed;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          "
+        >
+          <source src="Earth_Zoom_In.mov" type="video/mp4" />
+        </video>
+        <h1>Best of</h1>
+        <h1>Luck</h1>
+        <h3>2023</h3>
+        <br />
+      </div>
       <section>
         <h2>About Us</h2>
         <p>
@@ -72,8 +182,18 @@
       </section>
     </main>
     <footer>
-      <p>&copy; 2023 Path Finder</p>
+      <h5>&copy; 2023 Path Finder</h5>
     </footer>
   </body>
   <script src="script.js"></script>
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function () {
+      document.getElementById("radio" + counter).checked = true;
+      counter++;
+      if (counter > 4) {
+        counter = 1;
+      }
+    }, 5000);
+  </script>
 </html>

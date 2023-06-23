@@ -1,6 +1,11 @@
 /* style.css */
 
 /* Body Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   font-size: 16px;
 }
@@ -9,7 +14,7 @@ body {
   position: relative;
   font-family: Arial, sans-serif;
   background-color: Ivory;
-  color: DarkGreen;
+  color: black;
   margin: 0;
   padding: 0;
 }
@@ -22,6 +27,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
+  position: absolute;
+  top: 0;
 }
 header h1 {
   margin-left: 40px;
@@ -80,7 +87,6 @@ nav ul li a:hover::after {
 
 /* Main Content Styles */
 main {
-  padding: 20px;
 }
 
 h2 {
@@ -92,32 +98,17 @@ p {
 }
 
 .background {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-  position: relative;
-
-  height: 100vh;
-}
-
-.background::before {
-  content: "";
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("https://images.pexels.com/photos/2832034/pexels-photo-2832034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-  background-size: cover;
-  background-position: center;
-  filter: blur(2px);
-  z-index: -1;
+
+  height: 100vh;
 }
 
 .main-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   padding: 20px;
   color: Ivory;
 }
@@ -132,7 +123,10 @@ p {
   flex-direction: column;
   align-items: center;
   color: yellow;
-  margin: 25vh 100px;
+  margin: 25vh 0px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
 }
 
 #btn_1 {
@@ -231,9 +225,177 @@ p {
 
 /* Footer Styles */
 footer {
-  background-color: DarkGreen;
+  background-color: black;
   color: Ivory;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
   font-size: 14px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 35%;
+  max-width: 100%;
+  margin: 30px 0;
+  border-radius: 50px;
+  background-color: ivory;
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 2%;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+}
+
+.search-bar .search-icon-button {
+  position: relative;
+  padding: 15px;
+  margin: 3px;
+  background-color: #4caf50;
+  color: ivory;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.search-bar .search-icon-button i {
+  font-size: 16px;
+  transition: opacity 0.5s;
+}
+
+.search-bar .search-icon-button i:last-child {
+  position: absolute;
+  left: 50%;
+  top: 33%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.search-bar .search-icon-button:hover i:first-child {
+  opacity: 0;
+}
+
+.search-bar .search-icon-button:hover i:last-child {
+  opacity: 1;
+}
+
+.slider {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  top: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid yellow;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: yellow;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  /* margin-top: 160px; */
+  justify-content: center;
+  top: 33%;
+}
+
+.navigation-auto div {
+  border: 2px solid yellow;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: yellow;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: yellow;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: yellow;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: yellow;
+}
+
+.top_places {
+  height: 100%;
+  width: 100%;
+  margin: 40px;
+  /* border: 2px solid black; */
 }

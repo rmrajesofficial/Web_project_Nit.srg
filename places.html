@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      svg {
+        width: 300px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        background-color: rgb(126, 172, 210);
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+      "
+      id="state_map"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="77.5 121.5 3 3">
+        <path d="M78.5 121.5h1v1h-1zM79.5 122.5v1h-1v-1h1z" />
+      </svg>
+    </div>
+    <script>
+      var map = document.getElementById("state_map");
+      var params = new URLSearchParams(window.location.search);
+      var id = params.get("id");
+      var title = params.get("title");
+      var map;
+      switch (id) {
+        case "IN-GJ":
+          fetch("Gujarat_map_for_WLM-IN.svg")
+            .then((response) => response.text())
+            .then((svgCode) => {
+              // Set the SVG code as the innerHTML of the container
+              map.innerHTML = svgCode;
+            })
+            .catch((error) => {
+              console.error("Error fetching SVG file:", error);
+            });
+          break;
+        case "IN-DL":
+          fetch("Delhi_map_for_WLM-IN.svg")
+            .then((response) => response.text())
+            .then((svgCode) => {
+              map.innerHTML = svgCode;
+            })
+            .catch((error) => {
+              console.error("Error fetching SVG file:", error);
+            });
+          break;
+        case "IN-WB":
+          fetch("West_Bengal_map_for_WLM-IN.svg")
+            .then((response) => response.text())
+            .then((svgCode) => {
+              map.innerHTML = svgCode;
+            })
+            .catch((error) => {
+              console.error("Error fetching SVG file:", error);
+            });
+          break;
+      }
+    </script>
+  </body>
+</html>
