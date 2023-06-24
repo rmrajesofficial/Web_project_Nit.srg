@@ -12,71 +12,73 @@
 
     }
 
-/* Header Styles */
-header {
-  width: 100%;
-  background: transparent;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0px;
-}
-header h1 {
-  margin-left: 40px;
-  color: yellow;
-  transition: transform 0.8s ease;
-  cursor: pointer;
-}
-header h1:hover {
-  transform: scale(1.2);
-}
+    /* Header Styles */
+    header {
+      width: 100%;
+      background: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0px;
+    }
 
-h1 {
-  color: Ivory;
-  margin: 0;
-}
+    header h1 {
+      margin-left: 40px;
+      color: yellow;
+      transition: transform 0.8s ease;
+      cursor: pointer;
+    }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0px 40px;
-}
+    header h1:hover {
+      transform: scale(1.2);
+    }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
+    h1 {
+      color: Ivory;
+      margin: 0;
+    }
 
-nav ul li a {
-  color: yellow;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 22px;
-  transition: color 0.3s ease;
-  position: relative;
-}
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0px 40px;
+    }
 
-nav ul li a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background-color: ivory;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
 
-nav ul li a:hover {
-  color: ivory;
-}
+    nav ul li a {
+      color: yellow;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 22px;
+      transition: color 0.3s ease;
+      position: relative;
+    }
 
-nav ul li a:hover::after {
-  transform: scaleX(1);
-}
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: ivory;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
 
-/* body */
+    nav ul li a:hover {
+      color: ivory;
+    }
+
+    nav ul li a:hover::after {
+      transform: scaleX(1);
+    }
+
+    /* body */
     body {
       display: flex;
       flex-direction: column;
@@ -163,7 +165,9 @@ nav ul li a:hover::after {
     }
 
     .place {
-      padding: 40px 100px
+      padding: 40px 100px;
+      text-transform: uppercase;
+
     }
 
     #placesContainer {
@@ -178,18 +182,18 @@ nav ul li a:hover::after {
     }
   </style>
 </head>
- <header>
-		<h1>Path Finder</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="explore.html">Explore</a></li>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="contuctus.html">Contuct Us</a></li>
+<header>
+  <h1>Path Finder</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contuctus.html">Contuct Us</a></li>
+    </ul>
+  </nav>
+</header>
 
-			</ul>
-		</nav>
-	</header>
 <body>
   <div class="body">
     <svg id="mySvg" xmlns:mapsvg="http://mapsvg.com" xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -898,7 +902,7 @@ nav ul li a:hover::after {
   </div>
 
   <div class="place">
-    <h1> Mezoram </h1>
+    <h1> Mizoram </h1>
     <div id="placesContainer">
       <div class="places">
         <div><img src="src/2.jpg" alt="" class="img" /></div>
@@ -933,77 +937,1633 @@ nav ul li a:hover::after {
     </div>
   </div>
 
-
-
-  <!-- ....................................................................................................................................................................................................................................................... -->
-
   <div class="place">
-    <h1>State1 </h1>
+    <h1>Delhi </h1>
     <div id="placesContainer">
-      <div class="places" a>
+      <div class="places">
         <div><img src="src/2.jpg" alt="" class="img" /></div>
         <span style="flex-grow: 1">
-          <h3>s1p1</h3>
+          <h3>India Gate</h3>
         </span>
       </div>
 
       <div class="places">
         <div><img src="src/2.jpg" alt="" class="img" /></div>
         <span style="flex-grow: 1">
-          <h3>s1p2</h3>
+          <h3>Red Fort</h3>
       </div>
 
       <div class="places">
         <div><img src="src/4.jpg" alt="" class="img" /></div>
         <span style="flex-grow: 1">
-          <h3>s1p3</h3>
+          <h3>Chandni Chowk</h3>
       </div>
 
       <div class="places">
         <div><img src="src/2.jpg" alt="" class="img" /></div>
         <span style="flex-grow: 1">
-          <h3>s1p4</h3>
+          <h3> Humayun’s Tomb </h3>
       </div>
 
       <div class="places">
         <div><img src="src/3.jpg" alt="" class="img" /></div>
         <span style="flex-grow: 1">
-          <h3>s1p5</h3>
+          <h3> Connaught Place </h3>
       </div>
 
       <div class="places">
         <div><img src="src/2.jpg" alt="" class="img" /></div>
         <span style="flex-grow: 1">
-          <h3>s1p6</h3>
+          <h3> Qutub Minar </h3>
       </div>
 
       <div class="places">
         <div><img src="src/1.jpg" alt="" class="img" /></div>
         <span style="flex-grow: 1">
-          <h3>s1p7</h3>
-      </div>
-
-      <div class="places">
-        <div><img src="src/2.jpg" alt="" class="img" /></div>
-        <span style="flex-grow: 1">
-          <h3>s1p8</h3>
-      </div>
-
-      <div class="places">
-        <div><img src="src/2.jpg" alt="" class="img" /></div>
-        <span style="flex-grow: 1">
-          <h3>s1p10</h3>
-      </div>
-
-      <div class="places">
-        <div><img src="src/2.jpg" alt="" class="img" /></div>
-        <span style="flex-grow: 1">
-          <h3>s1p11</h3>
+          <h3> Lotus Temple </h3>
       </div>
     </div>
   </div>
 
-  <!-- .............................................................................................................................................................................................................................. -->
+  <div class="place">
+    <h1>Gujrat </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Gir National Park
+          </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Gandhinagar </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Ahmedabad </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Vadodara </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Dwarka </h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="place">
+    <h1>Himachal Pradesh </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Shimla – Best Places in Himachal </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Manali </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Dharamshala </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Dalhousie </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Kasol </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Kaza </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Kalpa </h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="place">
+    <h1>Karnataka </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Bangalore </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Hampi </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Mysore </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Madikeri </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Mangalore </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Gokarna </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Chikmagalur </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Dandeli </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Bandipur National Park
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Murudeshwar </h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="place">
+    <h1>Lakshwadeep </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Andretti </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Agatti </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Minicoy </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Kadmath </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Kalpeni </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Bangaram </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Kavaratti </h3>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="place">
+    <h1>Manipur </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Imphal</h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Ukhrul </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Churachandpur </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Bishnupur</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Tamenglong </h3>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="place">
+    <h1>Nagaland </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Kohima</h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Dimapur </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Mokokchung </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Wokha </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Pfutsero </h3>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="place">
+    <h1>Punjab </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Amritsar </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Ludhiana </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Jalandhar </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Bhatinda </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Patiala </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Pathankot </h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="place">
+    <h1>Uttar Pradesh </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Agra</h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Varanasi </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Lucknow </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Vrindavan </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Dudhwa National Park </h3>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="place">
+    <h1> CHANDIGARH </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Nek Chand’s Rock Garden
+          </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Sukhna Lake, Chandigarh
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Zakir Hussain Rose Garden
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Chhat Bir Zoo
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Government Museum and Art Gallery
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>International Dolls Museum
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Japanese Garden
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Nada Sahib Gurudwara
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Butterfly Park
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Open Hand Monument
+          </h3>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="place">
+    <h1>Sikkim </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> GANGTOK </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>NATHULA PASS
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> PELLING </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>TSOMGO LAKE
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> LACHEN </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>YUMTHANG VALLEY
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>KANCHANJANGHA NATIONAL PARK
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Rumtek moanstry
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>CHOLAMU LAKE
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>ZULUK
+          </h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="place">
+    <h1>DADRA AND NAGAR HAVELI
+    </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Hirwa Van Garden
+          </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Satmaliya Deer Park
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Vanganga Garden
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Dudhani Lake
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Bal Udyan Park
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Swaminarayan temple
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>our lady of piety church
+          </h3>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <div class="place">
+    <h1>ANDHRA PRADESH
+    </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Araku Valley
+          </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Visakhapatnam
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Amaravathi </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Gandikota </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Tirupati </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Vijayawada </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Machilipatnam </h3>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="place">
+    <h1> Odisha </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Sri Jagannath Puri Temple
+          </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Udayagiri and Khandagiri Cave
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Simlipal National Park, Baripada
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Chilika Lake , Puri
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Hirakud Dam
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Dhauli </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Konark </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Lingaraj Temple</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Chandrabhaga Beach</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Nandankanan Zoological Park</h3>
+      </div>
+    </div>
+  </div>
+  <div class="place">
+    <h1>MEGHALAYA
+    </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> SHILLONG </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>ELEPHANT FALLS
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>UMIAM LAKE
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> CHEERAPUNJI </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> MAWSYNRAM </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>BALPAKRAM NATIONAL PARK
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> BAGHMARA </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>nohsngithiang falls
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> JOWAI </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> TURA </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>nohkalikai falls
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>MAWSMAI CAVE
+          </h3>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="place">
+    <h1>MADHYA PRADESH
+    </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Khajuraho
+          </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Pachmarhi </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Bhedaghat </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Gwalior </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Kanha National Park </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Orchha </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Sanchi </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Ujjain </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Bhopal </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Bhimbetka </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Patalpani Waterfalls, Indore </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Mandu </h3>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="place">
+    <h1>UTTRAKHAND
+    </h1>
+    <div id="placesContainer">
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>KAGBHUSANDI LAKE
+          </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Jim Corbett National Park
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Rishikesh </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> BRAHMATAL </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> DEHRADUN </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> GANGOTRI </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Yamnotri </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>VALLEY OF FLOWERS
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>KEDARNATH TEMPLE
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> BADRINATH </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> HARIDWAR </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> AULI </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Mussoorie
+          </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> NANITAL </h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="place">
+    <h1>Bihar</h1>
+    <div id="placesContainer">
+      <div class="places" a>
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Gaya</h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Nalanda</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Vaishali</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Patna</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Rajnagar</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Kundalpur</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Pawapuri</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Bhagalpur</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Rajgir</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Begusarai</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="place">
+    <h1>Tamilnadu</h1>
+    <div id="placesContainer">
+      <div class="places" a>
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Brihadeeswarar Temple, Thanjavur</h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Vivekananda Rock Memorial, Kanyakumari</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Pancha Rathas, Mahabalipuram</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Nilgiri Hills</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Meenakshi Amman Temple, Madurai</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Ramanathaswamy Temple, Rameswaram</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Marina Beach, Chennai</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Government Museum, Chennai</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Kodaikanal Lake, Kodaikanal</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Ooty</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="place">
+    <h1>Telengana </h1>
+    <div id="placesContainer">
+      <div class="places" a>
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Hyderabad</h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Warangal</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Medak</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Sangareddy</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Nizamabad</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Ramagundam</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Karimnagar</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Khammam</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Mahbubnagar</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Adilabad</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Nalgonda</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Rangareddy</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Sircilla</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="place">
+    <h1>Arunachal Pradesh </h1>
+    <div id="placesContainer">
+      <div class="places" a>
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Namdapha National Park</h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Tawang</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Sela Pass</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Tezu</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Dirang</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Pasighat</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Nuranang Falls</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Sangti</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Bumla Pass</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Pakhui Wildlife Sanctuary</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="place">
+    <h1>Puducherry</h1>
+    <div id="placesContainer">
+      <div class="places" a>
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Paradise Beach </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Sri Aurobindo Ashram </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Auroville </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Arikamedu </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Seaside Promenade</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Serenity Beach </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Chunnambar Boat House </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Botanical Garden</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Old Lighthouse</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Basilica of the Sacred Heart of Jesus </h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Raj Niwas </h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Jawahar Toy Museum </h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>French War Memorial</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Sri Gokilambal Thirukameswarar Temple Puducherry</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="place">
+    <h1> Rajastan</h1>
+    <div id="placesContainer">
+      <div class="places" a>
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Jaipur</h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Jodhpur</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Udaipur</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Jaisalmer</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Bikaner</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Pushkar</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Mount Abu</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Ajmer</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Chittorgarh</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Ranthambore</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Keoladeo National Park</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Alwar</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Kumbhalgarh</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Neemrana Fort Palace</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Mandawa</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="place">
+    <h1>Andaman and Nicobar </h1>
+    <div id="placesContainer">
+      <div class="places" a>
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Havelock Island </h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Barren Island</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Cellular Jail </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Chidiya Tapu </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Ross Island</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Wandoor Beach </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Jolly Buoy Island</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Mount Harriet National Park</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Saddle Peak </h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Red Skin Island </h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Butler Bay Beach </h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Dhaninalah Mangrove Nature Walkaway</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>White Surf Waterfall </h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="place">
+    <h1>Chhattisgarh</h1>
+    <div id="placesContainer">
+      <div class="places" a>
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Chitrakote Falls</h3>
+        </span>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Barnawapara Wildlife Sanctuary</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/4.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Chandrahasini Devi Temple</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Bambleshwari Temple</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/3.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Danteshwari Temple</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Shri Rajiv Lochan Mandir</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/1.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Kailash Kutumsar Caves</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Bhoramdeo Temple</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Sirpur Heritage Site</h3>
+      </div>
+
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Raipur City</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3> Rajim</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Maitri Bagh</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Dongargarh</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Bhuteshwar Shivling</h3>
+      </div>
+      <div class="places">
+        <div><img src="src/2.jpg" alt="" class="img" /></div>
+        <span style="flex-grow: 1">
+          <h3>Gadiya Mountain</h3>
+      </div>
+    </div>
+  </div>
+
 
 
 
