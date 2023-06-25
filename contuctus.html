@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .abc,
+      .abcd {
+        display: flex;
+      }
+
+      .flex {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 50px;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      /* Style the form container */
+      .form-container {
+        /* width: 600px; */
+        /* margin: 0 auto; */
+        /* border: 1.5px solid #150b0b; */
+        border-radius: 12px;
+        padding: 25px;
+        background: white;
+        margin-right: 150px;
+        margin-top: 80px;
+        /* height: 600px; */
+        box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Style the form input groups */
+      .input-group {
+        margin-bottom: 10px;
+      }
+
+      /* Style the form labels */
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 15px;
+        padding: 5px;
+      }
+
+      /* Style the form inputs */
+      input[type="text"],
+      .input-group input[type="email"],
+      input[type="tel"] {
+        width: 80%;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 315px;
+      }
+
+      textarea {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        height: 200px;
+      }
+
+      input[type="submit"] {
+        text-align: center;
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: aqua;
+        color: black;
+      }
+
+      article {
+        text-align: center;
+      }
+
+      .required-indicator {
+        color: red;
+        margin-left: 5px;
+      }
+
+      .required-text {
+        font-size: 14px;
+        color: #555;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header style="position: static">
+      <img src="src/logo.png" alt="" style="height: 60px; width: 200px" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contuctus.html">Contuct Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="flex">
+      <div>
+        <section>
+          <div class="image-container">
+            <div class="box">
+              <img src="src/contact.png" alt="contact us" />
+            </div>
+          </div>
+        </section>
+        <article>
+          <div class="para">
+            <p style="color: #ff6ec7">
+              Have a question or suggestion?<br />
+              We'd love to hear from you!<br />
+              Please fill out the form and we'll get back to you as soon as
+              possible.
+            </p>
+          </div>
+        </article>
+      </div>
+      <aside>
+        <div class="form-container">
+          <p style="font-size: 25px; font-weight: bold">Contact Us</p>
+          <p class="required-text" style="font-size: 10px; color: red">
+            Fields marked with * are required.
+          </p>
+          <form action="submit-form.php" method="post">
+            <div class="abc">
+              <div class="input-group">
+                <label for="fname"
+                  >First Name:<span class="required-indicator">*</span></label
+                >
+                <input type="text" id="fname" name="fname" required />
+              </div>
+              <div class="input-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" />
+              </div>
+            </div>
+            <div class="abcd">
+              <div class="input-group">
+                <label for="email"
+                  >Email:<span class="required-indicator">*</span></label
+                >
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="input-group">
+                <label for="mobile"
+                  >Mobile Number:<span class="required-indicator"
+                    >*</span
+                  ></label
+                >
+                <input
+                  type="tel"
+                  id="mobile"
+                  name="mobile"
+                  pattern="[0-9]{10}"
+                  required
+                />
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="suggestions"
+                >Suggestions:<span class="required-indicator">*</span></label
+              >
+              <textarea
+                id="suggestions"
+                name="suggestions"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div style="text-align: center">
+              <input type="submit" value="Send Message" />
+            </div>
+          </form>
+        </div>
+      </aside>
+    </div>
+    <section
+      style="display: flex; height: 400px; background-color: darkslategrey"
+    >
+      <div class="last_text">
+        <h3>Top searches:</h3>
+        <p>Agra</p>
+        <p>Rajasthan:</p>
+        <p>Kerala</p>
+        <p>Goa</p>
+        <p>Golden Temple</p>
+        <p>Mysore Palace</p>
+        <p>Ladakh, Jammu and Kashmir</p>
+        <p>Udaipur</p>
+        <p>Delhi</p>
+        <p>Mumbai</p>
+        <p>Kolkata</p>
+        <p>Darjeeling,</p>
+        <p>Shimla</p>
+        <p>Agra Fort</p>
+      </div>
+      <div class="divider_last"></div>
+
+      <div class="last_text">
+        <h3>Top searches:</h3>
+        <p>Agra</p>
+        <p>Rajasthan:</p>
+        <p>Kerala</p>
+        <p>Goa</p>
+        <p>Golden Temple</p>
+        <p>Mysore Palace</p>
+        <p>Ladakh, Jammu and Kashmir</p>
+        <p>Udaipur</p>
+        <p>Delhi</p>
+        <p>Mumbai</p>
+        <p>Kolkata</p>
+        <p>Darjeeling,</p>
+        <p>Shimla</p>
+        <p>Agra Fort</p>
+      </div>
+      <div class="divider_last"></div>
+      <div
+        style="
+          height: 100%;
+          width: auto;
+          margin: 0px auto;
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <h3 style="text-align: center; margin-top: 50px; color: white">
+          To Get updates
+        </h3>
+        <div
+          style="
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 50px;
+              flex-direction: column;
+            "
+          >
+            <input
+              type="email"
+              placeholder="Enter your email"
+              style="
+                padding: 10px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                font-size: 14px;
+                width: 200px;
+              "
+            />
+            <button
+              style="
+                padding: 10px 20px;
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 14px;
+              "
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+        <h1 style="text-align: center; padding-left: 35px; color: white">
+          Contact Us
+        </h1>
+        <div class="last_cont3">
+          <a href="https://www.facebook.com/" class="facebook"
+            ><i class="fa fa-facebook fa-2x"></i
+          ></a>
+          <a href="https://www.instagram.com/" class="insta"
+            ><i class="fa fa-instagram fa-2x"></i
+          ></a>
+          <a href="https://www.twitter.com/" class="twitter"
+            ><i class="fa fa-twitter fa-2x"></i
+          ></a>
+          <a href="https://www.youtube.com/" class="youtube"
+            ><i class="fa fa-youtube fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h5>&copy; 2023 Explorex, All Rights Reserved.</h5>
+    </footer>
+  </body>
+</html>
