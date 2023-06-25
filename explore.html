@@ -109,6 +109,7 @@
     h1{
       color: black;
     }
+    
   </style>
 </head>
 
@@ -120,7 +121,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="explore.html">Explore</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="contuctus.html">Contuct Us</a></li>
+        <li><a href="contuctus.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
@@ -3856,6 +3857,14 @@
   <footer>
     <h5>&copy; 2023 Explorex, All Rights Reserved.</h5>
   </footer>
+
+<div>
+  <button id="scrollToTopBtn" onclick="scrollToTop()">
+    &#8679;  
+    <!-- 9757 -->
+  </button>
+</div>
+
   <script src="database.js" type="module"></script>
   <script>
     // import WestBengal from "./database.js";
@@ -3897,6 +3906,36 @@
 
       });
     });
+
+    
+  // scroll to top
+  window.addEventListener('scroll', function () {
+    var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    if (window.pageYOffset > 100) {
+      scrollToTopBtn.style.display = 'block';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+    }
+  });
+
+  document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+    scrollToTop(250); // Smooth scroll to top in 500 milliseconds
+  });
+
+  function scrollToTop(scrollDuration) {
+    var scrollStep = -window.scrollY / (scrollDuration / 15);
+
+    var scrollInterval = setInterval(function () {
+      if (window.scrollY !== 0) {
+        window.scrollBy(0, scrollStep);
+      } else {
+        clearInterval(scrollInterval);
+      }
+    }, 15);
+  }
+
+
   </script>
 </body>
 

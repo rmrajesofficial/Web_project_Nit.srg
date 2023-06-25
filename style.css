@@ -677,3 +677,29 @@ footer {
   color: white;
 
 }
+
+
+#scrollToTopBtn {
+  display: none;
+  /* Initially hide the button */
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 60%;
+  background-color: #555;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  filter: blur(0.9);
+  opacity: 0.4;
+
+}
+
+#scrollToTopBtn:hover {
+  filter: blur(0);
+  opacity: 0.7;
+}

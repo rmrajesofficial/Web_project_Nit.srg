@@ -80,3 +80,5 @@ window.onload = function () {
 
   typeText(); // Call the function immediately to start the typing effect
 };
+
+
