@@ -5,7 +5,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Ubuntu';
+  font-size: 22px;
 }
+
 :root {
   font-size: 16px;
 }
@@ -24,6 +27,12 @@ body {
 header {
   width: 100%;
   background: transparent;
+  /* background:  linear-gradient(to bottom, #000000, #323a32); */
+
+    backdrop-filter: blur(200px); /* Adjust the blur radius as needed */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the background color and opacity as needed */
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,11 +40,13 @@ header {
   position: absolute;
   top: 0;
 }
+
 header img {
   margin-left: 80px;
   transition: transform 0.8s ease;
   cursor: pointer;
 }
+
 header img:hover {
   transform: scale(1.2);
 }
@@ -57,7 +68,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: yellow;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 30px;
   transition: color 0.3s ease;
@@ -85,8 +96,7 @@ nav ul li a:hover::after {
 }
 
 /* Main Content Styles */
-main {
-}
+main {}
 
 h2 {
   color: DarkGreen;
@@ -130,12 +140,13 @@ p {
 
 #btn_1 a {
   border: 2px solid transparent;
-  background-color: yellow;
-  color: darkgreen;
+  background-color: rgb(255, 255, 254);
+  color: rgb(0, 0, 0);
   display: flex;
   font-size: 20px;
   height: 40px;
   width: 100px;
+  padding: 20px;
   border-radius: 25px;
   align-items: center;
   justify-content: center;
@@ -143,17 +154,19 @@ p {
   cursor: pointer;
   transition: 0.3s ease;
 }
+
 #btn_1 a:hover {
   background-color: transparent;
   border: 2px solid ivory;
   color: ivory;
 }
+
 .middle {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   height: 60px;
-  top: 100vh;
+  top: 110vh;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -162,21 +175,25 @@ p {
   border-radius: 50px;
   padding: 5px 50px;
 }
+
 .middle span {
   text-align: center;
   font-weight: bold;
   width: 100%;
   padding: 0px;
 }
+
 .middle span div {
   color: darkgreen;
   font-size: 1.2rem;
 }
+
 .divider {
   height: 100%;
   width: 5px;
   background-color: gray;
 }
+
 .help {
   display: flex;
   justify-content: center;
@@ -196,11 +213,13 @@ p {
   transition: transform 0.3s ease;
   cursor: pointer;
 }
+
 .help:hover {
   background-color: ivory;
   color: darkgreen;
   transform: scale(1.2);
 }
+
 .connect {
   display: flex;
   justify-content: center;
@@ -216,6 +235,7 @@ p {
   border-radius: 15px;
   z-index: +1;
 }
+
 #changing-text {
   height: 100px;
   overflow: hidden;
@@ -322,7 +342,7 @@ footer {
 }
 
 .manual-btn {
-  border: 2px solid yellow;
+  border: 2px solid rgba(255, 255, 255, 0);
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -334,22 +354,22 @@ footer {
 }
 
 .manual-btn:hover {
-  background: yellow;
+  background: rgb(255, 255, 255);
 }
 
-#radio1:checked ~ .first {
+#radio1:checked~.first {
   margin-left: 0;
 }
 
-#radio2:checked ~ .first {
+#radio2:checked~.first {
   margin-left: -20%;
 }
 
-#radio3:checked ~ .first {
+#radio3:checked~.first {
   margin-left: -40%;
 }
 
-#radio4:checked ~ .first {
+#radio4:checked~.first {
   margin-left: -60%;
 }
 
@@ -365,7 +385,7 @@ footer {
 }
 
 .navigation-auto div {
-  border: 2px solid yellow;
+  border: 2px solid rgb(255, 255, 255);
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
@@ -375,21 +395,22 @@ footer {
   margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-  background: yellow;
+#radio1:checked~.navigation-auto .auto-btn1 {
+  background: rgb(255, 255, 255);
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-  background: yellow;
+#radio2:checked~.navigation-auto .auto-btn2 {
+  background: rgb(255, 255, 255);
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-  background: yellow;
+#radio3:checked~.navigation-auto .auto-btn3 {
+  background: rgb(255, 255, 255);
 }
 
-#radio4:checked ~ .navigation-auto .auto-btn4 {
-  background: yellow;
+#radio4:checked~.navigation-auto .auto-btn4 {
+  background: rgb(255, 255, 255);
 }
+
 .places {
   min-width: 300px;
   border-radius: 10px;
@@ -434,6 +455,7 @@ footer {
   justify-content: space-between;
   padding: 15px 70px;
 }
+
 .last_cont1 {
   display: flex;
   align-items: center;
@@ -441,10 +463,12 @@ footer {
   width: 100%;
   height: 100%;
 }
+
 .last_cont1 img {
   width: 200px;
   height: 200px;
 }
+
 .last_cont2 {
   display: flex;
   align-items: center;
@@ -452,6 +476,7 @@ footer {
   width: 100%;
   height: 100%;
 }
+
 .feedback_form {
   width: 100%;
   height: 100%;
@@ -460,15 +485,19 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
 .feedback_name {
   margin: 5px 5px;
 }
+
 .feedback_email {
   margin: 5px 5px;
 }
+
 .feedback_disc {
   margin: 5px 5px;
 }
+
 .feedback_name input {
   width: 100%;
   height: 100%;
@@ -482,6 +511,7 @@ footer {
   font-size: 16px;
   padding: 3px 6px;
 }
+
 .feedback_email input {
   width: 100%;
   height: 100%;
@@ -495,6 +525,7 @@ footer {
   font-size: 16px;
   padding: 3px 6px;
 }
+
 .feedback_disc textarea {
   resize: none;
   width: 100%;
@@ -507,6 +538,7 @@ footer {
   padding: 5px 10px;
   font-size: 10px;
 }
+
 .feedback_btn .feedback_button_3 {
   display: flex;
   width: fit-content;
@@ -525,10 +557,12 @@ footer {
   color: var(--extra_color);
   border: 2px solid var(--prim_color);
 }
+
 .feedback_btn .feedback_button_3:hover {
   background-color: transparent;
   border: 2px solid var(--extra_color);
 }
+
 .last_cont3 {
   width: 100%;
   height: 100px;
@@ -538,6 +572,7 @@ footer {
   justify-content: center;
   margin: 20px;
 }
+
 .last_cont3 a {
   color: white;
   font-size: 12px;
@@ -551,58 +586,65 @@ footer {
   text-decoration: none;
   transition: all 0.2s;
 }
+
 .last_cont3 a:hover {
   color: var(--extra_color);
   /* border-radius: 50%; */
   transition: all 0.2s;
 }
+
 .last_cont3 .youtube:hover {
   background-color: #ff0000;
   border: 2px solid white;
   color: white;
   margin: 10px;
 }
+
 .last_cont3 .insta:hover {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+  background: radial-gradient(circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%);
   border: 2px solid white;
   color: white;
   opacity: 1;
 }
+
 .last_cont3 .facebook:hover {
   opacity: 1;
   background-color: #3b5998;
   border: 2px solid white;
   color: white;
 }
+
 .last_cont3 .twitter:hover {
   background-color: #00acee;
   border: 2px solid white;
   color: white;
   opacity: 1;
 }
+
 /* conainer 4  */
 .last_text {
   height: 100%;
   width: auto;
   margin: 0px auto;
 }
+
 .last_text h3 {
   margin: 30px 0px;
   color: white;
   text-align: center;
 }
+
 .last_text p {
   margin-bottom: 0px;
   color: white;
   text-align: center;
 }
+
 .divider_last {
   height: 90%;
   width: 3px;
@@ -631,6 +673,7 @@ footer {
 
 .video .content {
   text-align: center;
-  font-size: 5rem;
+  font-size: 200px;
   color: white;
+
 }
