@@ -29,10 +29,13 @@ header {
   background: transparent;
   /* background:  linear-gradient(to bottom, #000000, #323a32); */
 
-    backdrop-filter: blur(200px); /* Adjust the blur radius as needed */
-    -webkit-backdrop-filter: blur(10px); /* For Safari support */
-    background-color: rgba(0, 0, 0, 0.3); /* Adjust the background color and opacity as needed */
-  
+  backdrop-filter: blur(200px);
+  /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(10px);
+  /* For Safari support */
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Adjust the background color and opacity as needed */
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,6 +76,7 @@ nav ul li a {
   font-size: 30px;
   transition: color 0.3s ease;
   position: relative;
+  font-family: "Roboto Slab", serif;
 }
 
 nav ul li a::after {
@@ -280,6 +284,7 @@ footer {
   color: ivory;
   border: none;
   border-radius: 50px;
+  width: 10%;
   cursor: pointer;
   transition: all 0.5s;
 }
