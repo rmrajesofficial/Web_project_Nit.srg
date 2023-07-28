@@ -1,341 +1,218 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ExploreX &#127757; || Home </title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-<style>
-  #scrollToTopBtn {
-    display: none;
-    /* Initially hide the button */
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    width: 60px;
-    height: 60px;
-    border-radius: 60%;
-    background-color: #555;
-    color: #fff;
-    font-size: 24px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    filter: blur(0.9);
-    opacity: 0.4;
-  
-  }
-  
-  #scrollToTopBtn:hover {
-    filter: blur(0);
-    opacity: 0.7;
-  }</style>
-  </head>
-  <body>
-    <div class="background">
-      <div class="slider">
-        <div class="slides">
-          <input type="radio" name="radio-btn" id="radio1" />
-          <input type="radio" name="radio-btn" id="radio2" />
-          <input type="radio" name="radio-btn" id="radio3" />
-          <input type="radio" name="radio-btn" id="radio4" />
-          <div class="slide first">
-            <img src="src/1.jpeg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="src/2.jpeg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="src/3.jpeg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="src/4.jpeg" alt="" />
-          </div>
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-          </div>
+
+<head>
+  <title>ExploreX &#127757; || Home </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+  <header>
+    <img src="src/logo.png" alt="" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contuctus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="background">
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+
+        <div class="slide first">
+          <img src="src/1.jpeg" alt="" />
         </div>
-        <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
+
+        <div class="slide">
+          <img src="src/2.jpeg" alt="" />
+        </div>
+
+        <div class="slide">
+          <img src="src/3.jpeg" alt="" />
+        </div>
+
+        <div class="slide">
+          <img src="src/4.jpeg" alt="" />
+        </div>
+
+        <!-- Auto navigation buttons (optional, if you want to add this feature) -->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
         </div>
       </div>
-      <header>
-        <img src="src/logo.png"  alt="" style="height: 60px; width: 200px" />
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="explore.html">Explore</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contuctus.html">Contact Us</a></li>
-          </ul>
-        </nav>
-      </header>
 
-      <div id="container_1">
-        <h2 id="changing-text" style="font-size: 4rem; color: ivory"></h2>
-        <div class="search-bar">
-          <input type="text" placeholder="Search" />
-          <button type="submit" class="search-icon-button">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-arrow-right"></i>
+      <!-- Manual navigation buttons -->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <div id="container_1">
+      <h2 id="changing-text"></h2>
+
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+        <button type="submit" class="search-icon-button">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <container id="explorebtn"><a href="explore.html">
+          Explore</a></container>
+
+    </div>
+  </div>
+  <div class="floatbar">
+    <span>
+      <div>Number of state</div>
+      <div class="count_1">3</div>
+    </span>
+    <div class="divider"></div>
+    <span>
+      <div>Number of places</div>
+      <div class="count_2">0</div>
+    </span>
+    <div class="divider"></div>
+    <span>
+      <div>extra</div>
+      <div class="count_3">0</div>
+    </span>
+  </div>
+
+
+  <section>
+    <h1 class="midsec">
+      TOP PLACES</h1>
+    <div class="midsecpic">
+      <div class="midsecplaces">
+        <a href="places.html?data=West Bengal&index=1">
+          <div>
+            <img
+              src="https://media.istockphoto.com/id/498683275/photo/tea-time.jpg?s=612x612&w=0&k=20&c=M0bq4cgRMMbUuXeeQrlR9QOxx4UTP27o3-Cu6xhs6WI=" />
+          </div>
+          <span>
+            <h3>Darjeeling</h3>
+          </span>
+        </a>
+      </div>
+      <div class="midsecplaces">
+        <a href="places.html?data=Maharashtra&index=5">
+          <div style="height: auto; width: auto">
+            <img src="https://wallpaperaccess.com/full/1180008.jpg" />
+          </div>
+          <span>
+            <h3>Mumbai</h3>
+          </span>
+        </a>
+      </div>
+      <div class="midsecplaces">
+        <a href="places.html?data=West Bengal&index=0">
+          <div>
+            <img
+              src="https://media.istockphoto.com/id/1164386039/photo/howrah-bridge-on-river-ganges-at-kolkata-at-twilight-with-moody-sky.jpg?s=612x612&w=0&k=20&c=CHrNWdInFSDyERdvgd0f8935hZcBQU6lbYCE4LlXqUY=" />
+          </div>
+          <span>
+            <h3>Kolkata</h3>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="video">
+      <video src="src/video.mp4" autoplay loop muted></video>
+      <div class="content">
+        <h3>Start Exploring</h3>
+        <h3>Dreaming</h3>
+        <h3>Traveling</h3>
+      </div>
+    </div>
+  </main>
+
+  <section class="last">
+    <div class="last_text">
+      <h3>Top searches:</h3>
+      <p>Agra</p>
+      <p>Rajasthan:</p>
+      <p>Kerala</p>
+      <p>Goa</p>
+      <p>Golden Temple</p>
+      <p>Mysore Palace</p>
+      <p>Ladakh, Jammu and Kashmir</p>
+    </div>
+
+    <div class="divider_last"></div>
+
+    <div class="last_text">
+      <h3>Top searches:</h3>
+      <p>Agra</p>
+      <p>Rajasthan:</p>
+      <p>Kerala</p>
+      <p>Goa</p>
+      <p>Golden Temple</p>
+      <p>Mysore Palace</p>
+      <p>Ladakh, Jammu and Kashmir</p>
+    </div>
+
+    <div class="divider_last"></div>
+
+    <div class="lastsec">
+      <h1>
+        To Get updates
+      </h1>
+      <div>
+        <div>
+          <input type="email" placeholder="Enter your email" />
+          <button>
+            Subscribe
           </button>
         </div>
-
-        <container id="btn_1"
-          ><a href="explore.html" style="text-decoration: none">
-            Explore</a
-          ></container
-        >
+      </div>
+      <h1>
+        Contact Us
+      </h1>
+      <div class="last_cont3">
+        <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com/" class="insta"><i class="fa fa-instagram fa-2x"></i></a>
+        <a href="https://www.twitter.com/" class="twitter"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube fa-2x"></i></a>
       </div>
     </div>
-    <div class="middle">
-      <span
-        style="display: flex; justify-content: center; flex-direction: column"
-        ><div>Number of state</div>
-        <div class="count_1">3</div></span
-      >
-      <div class="divider"></div>
-      <span
-        style="display: flex; justify-content: center; flex-direction: column"
-        ><div>Number of places</div>
-        <div class="count_2">0</div></span
-      >
-      <div class="divider"></div>
-      <span
-        style="display: flex; justify-content: center; flex-direction: column"
-        ><div>extra</div>
-        <div class="count_3">0</div></span
-      >
-    </div>
-    <main>
-      <h1 style="color: black; padding: 90px 140px ;text-align: center; font-size: 30px; position: relative; top:70px;word-spacing: 15px; ">TOP PLACES</h1>
-      <div
-        style="
-          height: 500px;
-          width: auto;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 0px 100px;
-          position: relative;
-        "
-      >
-        <div class="places" style="height: 100%; width: 100%; margin: 40px">
-          <a href="places.html?data=West Bengal&index=1">
-            <div>
-              <img
-                src="https://media.istockphoto.com/id/498683275/photo/tea-time.jpg?s=612x612&w=0&k=20&c=M0bq4cgRMMbUuXeeQrlR9QOxx4UTP27o3-Cu6xhs6WI="
-                alt=""
-                style="height: 395px; width: 400px; border-radius: 20px"
-              />
-            </div>
-            <span><h3>Darjeeling</h3></span>
-          </a>
-        </div>
-        <div class="places" style="height: 100%; width: 100%; margin: 40px">
-          <a href="places.html?data=Maharashtra&index=5">
-            <div style="height: auto; width: auto">
-              <img
-                src="https://wallpaperaccess.com/full/1180008.jpg"
-                alt=""
-                style="height: 395px; width: 400px; border-radius: 20px"
-              />
-            </div>
-            <span><h3>Mumbai</h3></span>
-          </a>
-        </div>
-        <div class="places" style="height: 100%; width: 100%; margin: 40px">
-          <a href="places.html?data=West Bengal&index=0">
-            <div>
-              <img
-                src="https://media.istockphoto.com/id/1164386039/photo/howrah-bridge-on-river-ganges-at-kolkata-at-twilight-with-moody-sky.jpg?s=612x612&w=0&k=20&c=CHrNWdInFSDyERdvgd0f8935hZcBQU6lbYCE4LlXqUY="
-                alt=""
-                style="height: 395px; width: 400px; border-radius: 20px"
-              />
-            </div>
-            <span><h3>Kolkata</h3></span></a
-          >
-        </div>
-      </div>
-      <div class="video">
-        <video src="src/video.mp4" autoplay loop muted style="filter: brightness(50%); " ></video>
-        <div class="content" >
-          <h3 style="font-size: 55px; padding: 10px;">Start Exploring</h3>
-          <h3 style="font-size: 55px; padding: 10px;"> Dreaming</h3>
-          <h3 style="font-size: 55px; padding: 10px;">Traveling</h3>
-        </div>
-      </div>
-      <section
-        style="display: flex; height: 400px; background-color: darkslategrey"
-      >
-        <div class="last_text">
-          <h3>Top searches:</h3>
-          <p>Agra</p>
-          <p>Rajasthan:</p>
-          <p>Kerala</p>
-          <p>Goa</p>
-          <p>Golden Temple</p>
-          <p>Mysore Palace</p>
-          <p>Ladakh, Jammu and Kashmir</p>
-          <p>Udaipur</p>
-          <p>Delhi</p>
-          <p>Mumbai</p>
-          
-        </div>
-        <div class="divider_last"></div>
+  </section>
 
-        <div class="last_text">
-          <h3>Top searches:</h3>
-          <p>Agra</p>
-          <p>Rajasthan:</p>
-          <p>Kerala</p>
-          <p>Goa</p>
-          <p>Golden Temple</p>
-          <p>Mysore Palace</p>
-          <p>Ladakh, Jammu and Kashmir</p>
-          <p>Udaipur</p>
-          <p>Delhi</p>
-          <p>Mumbai</p>
-         
-        </div>
-        <div class="divider_last"></div>
-        <div
-          style="
-            height: 100%;
-            width: auto;
-            margin: 0px auto;
-            display: flex;
-            flex-direction: column;
-          "
-        >
-          <h3 style="text-align: center; margin-top: 50px; color: white">
-            To Get updates
-          </h3>
-          <div
-            style="
-              height: 100%;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-            "
-          >
-            <div
-              style="
-                display: flex;
-                align-items: center;
-                gap: 50px;
-                flex-direction: column;
-              "
-            >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                style="
-                  padding: 10px;
-                  border-radius: 4px;
-                  border: 1px solid #ccc;
-                  font-size: 14px;
-                  width: 200px;
-                "
-              />
-              <button
-                style="
-                  padding: 10px 20px;
-                  background-color: #4caf50;
-                  color: white;
-                  border: none;
-                  border-radius: 4px;
-                  cursor: pointer;
-                  font-size: 14px;
-                "
-              >
-                Subscribe
-              </button>
-            </div>
-          </div>
-          <h1 style="text-align: center; padding-left: 35px; color: white">
-            Contact Us
-          </h1>
-          <div class="last_cont3">
-            <a href="https://www.facebook.com/" class="facebook"
-              ><i class="fa fa-facebook fa-2x"></i
-            ></a>
-            <a href="https://www.instagram.com/" class="insta"
-              ><i class="fa fa-instagram fa-2x"></i
-            ></a>
-            <a href="https://www.twitter.com/" class="twitter"
-              ><i class="fa fa-twitter fa-2x"></i
-            ></a>
-            <a href="https://www.youtube.com/" class="youtube"
-              ><i class="fa fa-youtube fa-2x"></i
-            ></a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <h5>&copy; 2023 Explorex, All Rights Reserved.</h5>
-    </footer>
-    <div>
-      <button id="scrollToTopBtn" onclick="scrollToTop()">
-        &#8679;  
-        <!-- 9757 -->
-      </button></div>
-    
-  </body>
-  <script src="script.js"></script>
-  <script type="text/javascript">
-    var counter = 1;
-    setInterval(function () {
-      document.getElementById("radio" + counter).checked = true;
-      counter++;
-      if (counter > 4) {
-        counter = 1;
-      }
-    }, 5000);
+  <footer>
+    <h5>&copy; 2023 Explorex | All Rights Reserved.</h5>
+  </footer>
+  <div>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+      &#8679;
+      <!-- 9757 -->
+    </button>
+  </div>
 
-    
-   // scroll to top
-   window.addEventListener('scroll', function () {
-    var scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-    if (window.pageYOffset > 100) {
-      scrollToTopBtn.style.display = 'block';
-    } else {
-      scrollToTopBtn.style.display = 'none';
-    }
-  });
-
-  document.getElementById('scrollToTopBtn').addEventListener('click', function () {
-    scrollToTop(250); // Smooth scroll to top in 500 milliseconds
-  });
-
-  function scrollToTop(scrollDuration) {
-    var scrollStep = -window.scrollY / (scrollDuration / 15);
-
-    var scrollInterval = setInterval(function () {
-      if (window.scrollY !== 0) {
-        window.scrollBy(0, scrollStep);
-      } else {
-        clearInterval(scrollInterval);
-      }
-    }, 15);
-  }
-
-  </script>
+</body>
+<script src="script.js"></script>
 </html>

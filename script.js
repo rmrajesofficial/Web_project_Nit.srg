@@ -82,3 +82,83 @@ window.onload = function () {
 };
 
 
+
+var counter = 1;
+setInterval(function () {
+  document.getElementById("radio" + counter).checked = true;
+  counter++;
+  if (counter > 4) {
+    counter = 1;
+  }
+}, 5000);
+
+
+// scroll to top
+window.addEventListener('scroll', function () {
+  var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+  if (window.pageYOffset > 100) {
+    scrollToTopBtn.style.display = 'block';
+  } else {
+    scrollToTopBtn.style.display = 'none';
+  }
+});
+
+document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+  scrollToTop(250); // Smooth scroll to top in 500 milliseconds
+});
+
+function scrollToTop(scrollDuration) {
+  var scrollStep = -window.scrollY / (scrollDuration / 15);
+
+  var scrollInterval = setInterval(function () {
+    if (window.scrollY !== 0) {
+      window.scrollBy(0, scrollStep);
+    } else {
+      clearInterval(scrollInterval);
+    }
+  }, 15);
+}
+
+
+// explore page 
+    // import WestBengal from "./database.js";
+    function showTitle(element) {
+      var title = element.getAttribute("title");
+      var tooltip = document.createElement("div");
+      tooltip.className = "tooltip";
+      tooltip.innerText = title;
+      document.body.appendChild(tooltip);
+
+      var elementRect = element.getBoundingClientRect();
+      var tooltipRect = tooltip.getBoundingClientRect();
+
+      var tooltipTop = elementRect.top - tooltipRect.height - 10; // Adjust the vertical position
+      var tooltipLeft =
+        elementRect.left + (elementRect.width - tooltipRect.width) / 2; // Center horizontally
+
+      tooltip.style.top = tooltipTop + "px";
+      tooltip.style.left = tooltipLeft + "px";
+    }
+
+    function hideTitle() {
+      var tooltip = document.querySelector(".tooltip");
+      if (tooltip) {
+        tooltip.parentNode.removeChild(tooltip);
+      }
+    }
+    const stateElements = document.querySelectorAll(".state");
+
+
+    stateElements.forEach(element => {
+      element.addEventListener("click", () => {
+        const strnn = element.getAttribute("title");
+        for (let i = 0; i < 35; i++) {
+          const h1Element = document.querySelectorAll(".place h1")[i];
+          if (strnn === h1Element.textContent.trim()) h1Element.scrollIntoView({ behavior: "smooth" });
+        }
+        // h1Element.scrollIntoView({ behavior: "smooth" });
+
+      });
+    });
+
